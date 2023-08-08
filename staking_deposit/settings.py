@@ -15,7 +15,7 @@ GOERLI = 'goerli'
 PRATER = 'prater'
 SEPOLIA = 'sepolia'
 ZHEJIANG = 'zhejiang'
-AERIEMAINNET = 'aeriemainnet'
+AERIE = 'aerie'
 
 # Mainnet setting
 MainnetSetting = BaseChainSetting(
@@ -35,7 +35,7 @@ ZhejiangSetting = BaseChainSetting(
     GENESIS_VALIDATORS_ROOT=bytes.fromhex('53a92d8f2bb1d85f62d16a156e6ebcd1bcaba652d0900b2c2f387826f3481f6f'))
 # Aerie setting
 AerieSetting = BaseChainSetting(
-    NETWORK_NAME=AERIEMAINNET, GENESIS_FORK_VERSION=bytes.fromhex('20000000'),
+    NETWORK_NAME=AERIE, GENESIS_FORK_VERSION=bytes.fromhex('20000000'),
     GENESIS_VALIDATORS_ROOT=bytes.fromhex('f453c5f7819354002b457503b80a96e34ef513f3ffbb1559ccf96772079c4c1b'))    
 
 
@@ -45,7 +45,7 @@ ALL_CHAINS: Dict[str, BaseChainSetting] = {
     PRATER: GoerliSetting,  # Prater is the old name of the Prater/Goerli testnet
     SEPOLIA: SepoliaSetting,
     ZHEJIANG: ZhejiangSetting,
-    AERIEMAINNET:AerieSetting
+    AERIE:AerieSetting
 }
 
 
