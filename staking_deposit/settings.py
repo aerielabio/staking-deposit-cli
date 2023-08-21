@@ -36,7 +36,7 @@ ZhejiangSetting = BaseChainSetting(
 # Aerie setting
 AerieSetting = BaseChainSetting(
     NETWORK_NAME=AERIE, GENESIS_FORK_VERSION=bytes.fromhex('20000000'),
-    GENESIS_VALIDATORS_ROOT=bytes.fromhex('f453c5f7819354002b457503b80a96e34ef513f3ffbb1559ccf96772079c4c1b'))    
+    GENESIS_VALIDATORS_ROOT=bytes.fromhex('9a604b4db9835a3ff1c17093fdf31a4171988d63ff4fac155db80ddc8c078ef6'))    
 
 
 ALL_CHAINS: Dict[str, BaseChainSetting] = {
